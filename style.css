@@ -147,3 +147,68 @@
     width: 60px;
     height: 20px;
 }
+
+.ex-13-button:hover .ex-13-top-white{
+  animation-name: bianco-last-top;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-iteration-count: 1;
+}
+@keyframes bianco-last-top {
+  0% {top: -10px; left:10%;}
+  25% {top:-10px; left:70%;}
+  40% {top: 100%; left:70%;}
+  70% {top:100%; left: 0;}
+  90% {top: -10px; left: -15px;}
+  100% {top: -10px; left:10%;}
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+  animation-name: bianco-bottom-top;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-iteration-count: 1;
+}
+@keyframes bianco-bottom-top {
+  0% {bottom: -10px; right:10%;}
+  25% {bottom:-10px; right: calc(100% - 30px);}
+  40% {bottom: 100%; right: calc(100% - 30px);}
+  70% {bottom:100%; right: 0;}
+  90% {bottom: -10px; right: -15px;}
+  100% {bottom: -10px; right:20%;}
+}
+
+
+
+
+
+
+.ex-12-button:hover .ex-12-top-white{
+  animation-name: bianco-1;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-play-state: running;
+}
+@keyframes bianco-1 {
+  0% {left: 10%;}
+  50% {left:60%;}
+  100% {left:10%;}
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+  animation-name: bianco-2;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-play-state: running;
+}
+@keyframes bianco-2 {
+  0% {right: 20%;}
+  50% {right:60%;}
+  100% {right:20%;}
+}
